@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Doe — Web Developer Portfolio</title>
+  <meta name="description" content="John Doe | Web Developer — PHP (Laravel, CodeIgniter), React, Next.js, Crypto Exchange Platforms" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom small tweaks */
+    .gradient-cta { background: linear-gradient(90deg,#7c3aed,#06b6d4); }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 leading-relaxed">
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-cyan-400 flex items-center justify-center text-xl font-bold">JD</div>
+      <div class="hidden sm:block">
+        <h1 class="text-xl font-semibold">John Doe</h1>
+        <p class="text-sm text-gray-300">Web Developer — Laravel • React • Next.js • Crypto</p>
+      </div>
+    </a>
+    <nav class="space-x-4">
+      <a href="#projects" class="text-sm hover:underline">Projects</a>
+      <a href="#experience" class="text-sm hover:underline">Experience</a>
+      <a href="#contact" class="text-sm hover:underline">Contact</a>
+      <a href="#" class="inline-block ml-2 px-4 py-2 text-sm rounded-md gradient-cta shadow-md">Download Resume</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Hero -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
+      <div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Hi — I'm John Doe</h2>
+        <p class="text-gray-300 mb-6">A results-driven Web Developer with 5+ years building scalable, secure web apps. I specialize in <strong>PHP (Laravel & CodeIgniter)</strong>, <strong>React & Next.js</strong>, and <strong>crypto exchange</strong> platform development.</p>
+        <div class="flex gap-3 flex-wrap">
+          <a href="#projects" class="px-4 py-2 rounded-md glass border border-gray-700 text-sm">View Projects</a>
+          <a href="#contact" class="px-4 py-2 rounded-md gradient-cta text-sm">Hire Me</a>
+        </div>
+      </div>
+      <div class="p-6 bg-gradient-to-br from-gray-800 to-gray-800 rounded-2xl shadow-lg">
+        <ul class="grid grid-cols-2 gap-4">
+          <li class="p-4 bg-gray-900 rounded-lg">
+            <h3 class="text-sm text-gray-400">Primary</h3>
+            <p class="mt-1 font-semibold">Laravel · React · Next.js</p>
+          </li>
+          <li class="p-4 bg-gray-900 rounded-lg">
+            <h3 class="text-sm text-gray-400">Backend</h3>
+            <p class="mt-1 font-semibold">PHP · MySQL · Redis</p>
+          </li>
+          <li class="p-4 bg-gray-900 rounded-lg">
+            <h3 class="text-sm text-gray-400">Blockchain</h3>
+            <p class="mt-1 font-semibold">Wallets · Blockchain APIs · ERC20</p>
+          </li>
+          <li class="p-4 bg-gray-900 rounded-lg">
+            <h3 class="text-sm text-gray-400">Tools</h3>
+            <p class="mt-1 font-semibold">Docker · AWS · Git · CI/CD</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-8">
+      <h3 class="text-2xl font-bold mb-4">Key Projects</h3>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card 1 -->
+        <article class="bg-gray-800 rounded-xl overflow-hidden shadow-md">
+          <img src="https://via.placeholder.com/800x450.png?text=Crypto+Exchange" alt="Crypto Exchange" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">Crypto Exchange Platform</h4>
+            <p class="text-sm text-gray-400 mt-2">Built a scalable trading platform with real-time order books, multi-currency wallets, and KYC flows. Handled 50K+ daily transactions.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-xs text-gray-300">Laravel · React · WebSockets</div>
+              <button onclick="openModal('modal1')" class="px-3 py-1 text-sm rounded-md glass">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="bg-gray-800 rounded-xl overflow-hidden shadow-md">
+          <img src="https://via.placeholder.com/800x450.png?text=E-commerce+Platform" alt="E-commerce" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">E-commerce Platform</h4>
+            <p class="text-sm text-gray-400 mt-2">End-to-end e-commerce system with secure checkout, inventory management and Next.js front-end for SEO and performance.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-xs text-gray-300">Laravel · Next.js · MySQL</div>
+              <button onclick="openModal('modal2')" class="px-3 py-1 text-sm rounded-md glass">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="bg-gray-800 rounded-xl overflow-hidden shadow-md">
+          <img src="https://via.placeholder.com/800x450.png?text=Analytics+Dashboard" alt="Analytics Dashboard" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h4 class="font-semibold">Admin Dashboard & Analytics</h4>
+            <p class="text-sm text-gray-400 mt-2">Interactive dashboards with real-time charts and KPIs to monitor trading activity and system health.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-xs text-gray-300">React · Chart.js · WebSockets</div>
+              <button onclick="openModal('modal3')" class="px-3 py-1 text-sm rounded-md glass">Details</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-8">
+      <h3 class="text-2xl font-bold mb-4">Experience</h3>
+      <div class="space-y-4">
+        <div class="p-4 bg-gray-800 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="font-semibold">Senior Web Developer — Crypto Exchange Platform</h4>
+              <p class="text-sm text-gray-400">Jan 2021 — Present · Remote</p>
+            </div>
+            <div class="text-sm text-gray-300">Lead Developer</div>
+          </div>
+          <ul class="mt-3 list-disc ml-5 text-gray-300 text-sm">
+            <li>Led backend & frontend development of a high-throughput exchange.</li>
+            <li>Implemented wallet integrations and trade execution APIs.</li>
+            <li>Optimized performance and reduced latency via caching and query tuning.</li>
+          </ul>
+        </div>
+
+        <div class="p-4 bg-gray-800 rounded-lg">
+          <div class="flex justify-between items-center">
+            <div>
+              <h4 class="font-semibold">Web Developer — ABC Software Solutions</h4>
+              <p class="text-sm text-gray-400">Jul 2018 — Dec 2020 · City, Country</p>
+            </div>
+            <div class="text-sm text-gray-300">Software Engineer</div>
+          </div>
+          <ul class="mt-3 list-disc ml-5 text-gray-300 text-sm">
+            <li>Built enterprise web apps using Laravel, CodeIgniter and React.</li>
+            <li>Migrated frontends to Next.js to boost SEO and performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-8">
+      <h3 class="text-2xl font-bold mb-4">Contact</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <h4 class="font-semibold">Get in touch</h4>
+          <p class="text-sm text-gray-400 mt-2">I'm available for freelance & full-time opportunities. I typically respond within 24 hours.</p>
+
+          <ul class="mt-4 space-y-2 text-sm text-gray-300">
+            <li><strong>Email:</strong> <a href="mailto:email@example.com" class="text-cyan-300">email@example.com</a></li>
+            <li><strong>Phone:</strong> +1-234-567-890</li>
+            <li><strong>Location:</strong> City, Country</li>
+          </ul>
+
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="px-3 py-2 rounded-md glass text-sm">GitHub</a>
+            <a href="#" class="px-3 py-2 rounded-md glass text-sm">LinkedIn</a>
+            <a href="#" class="px-3 py-2 rounded-md glass text-sm">Portfolio</a>
+          </div>
+        </div>
+
+        <form class="p-6 bg-gray-800 rounded-lg" onsubmit="event.preventDefault(); alert('Thanks! Message sent (demo).')">
+          <label class="block text-sm text-gray-300">Name</label>
+          <input class="w-full mt-1 p-2 bg-gray-900 rounded-md border border-gray-700 text-sm" placeholder="Your name" required />
+
+          <label class="block text-sm text-gray-300 mt-3">Email</label>
+          <input type="email" class="w-full mt-1 p-2 bg-gray-900 rounded-md border border-gray-700 text-sm" placeholder="you@example.com" required />
+
+          <label class="block text-sm text-gray-300 mt-3">Message</label>
+          <textarea class="w-full mt-1 p-2 bg-gray-900 rounded-md border border-gray-700 text-sm" rows="4" placeholder="Tell me about the project..."></textarea>
+
+          <button class="mt-4 px-4 py-2 rounded-md gradient-cta">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-12 py-6 text-center text-sm text-gray-500">
+      © John Doe — Web Developer • Built with HTML & Tailwind
+    </footer>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal1" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-60 p-4">
+    <div class="max-w-2xl bg-gray-900 rounded-xl p-6">
+      <h4 class="text-lg font-semibold">Crypto Exchange Platform — Details</h4>
+      <p class="text-gray-300 mt-3">Technical highlights: Laravel APIs, Redis caching, WebSocket order book, multi-currency wallets, KYC & AML integrations, Dockerized deployments, CI/CD pipelines.</p>
+      <ul class="mt-3 text-gray-300 list-disc ml-5 text-sm">
+        <li>Handled 50K+ daily transactions.</li>
+        <li>Reduced trade execution latency by 18% after optimizations.</li>
+        <li>Implemented secure hot/cold wallet strategy.</li>
+      </ul>
+      <div class="mt-4 text-right"><button onclick="closeModal('modal1')" class="px-4 py-2 rounded-md glass">Close</button></div>
+    </div>
+  </div>
+
+  <div id="modal2" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-60 p-4">
+    <div class="max-w-2xl bg-gray-900 rounded-xl p-6">
+      <h4 class="text-lg font-semibold">E-commerce Platform — Details</h4>
+      <p class="text-gray-300 mt-3">Technical highlights: Laravel backend, Next.js storefront for SEO, secure payment integrations, inventory microservices, automated deployments.</p>
+      <div class="mt-4 text-right"><button onclick="closeModal('modal2')" class="px-4 py-2 rounded-md glass">Close</button></div>
+    </div>
+  </div>
+
+  <div id="modal3" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-60 p-4">
+    <div class="max-w-2xl bg-gray-900 rounded-xl p-6">
+      <h4 class="text-lg font-semibold">Admin Dashboard — Details</h4>
+      <p class="text-gray-300 mt-3">Technical highlights: React + Charting libraries, real-time metrics via WebSockets, role-based access control, exportable CSV & PDF reports.</p>
+      <div class="mt-4 text-right"><button onclick="closeModal('modal3')" class="px-4 py-2 rounded-md glass">Close</button></div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+      document.getElementById(id).classList.add('flex');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('flex');
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    // Simple mobile nav fallback (if needed in future enhancements)
+  </script>
+</body>
+</html>
